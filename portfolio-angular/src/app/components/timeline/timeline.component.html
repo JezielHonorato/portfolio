@@ -1,0 +1,20 @@
+<section id="timeline" class="container-fluid py-5">
+  <h2 class="text-center mb-5">Minha Jornada</h2>
+  <div class="timeline-container">
+    <div class="timeline-wrapper">
+      <div class="timeline-horizontal">
+        <div class="timeline-item" *ngFor="let item of timelineItems">
+          <div class="timeline-point"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content card">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.title }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <div class="timeline-date">{{ item.date }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
